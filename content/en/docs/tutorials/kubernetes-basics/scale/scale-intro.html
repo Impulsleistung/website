@@ -113,9 +113,26 @@ description: |-
                <p>To list your deployments use the <code>get deployments</code> subcommand:
                <code><b>kubectl get deployments</b></code></p>
                <p>The output should be similar to:</p>
-               <pre>NAME                  READY   UP-TO-DATE   AVAILABLE   AGE
-               kubernetes-bootcamp   1/1     1            1           11m
-               </pre>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>NAME</th>
+                      <th>READY</th>
+                      <th>UP-TO-DATE</th>
+                      <th>AVAILABLE</th>
+                      <th>AGE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>kubernetes-bootcamp</td>
+                      <td>1/1</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>11m</td>
+                    </tr>
+                  </tbody>
+                </table>
                <p>We should have 1 Pod. If not, run the command again. This shows:</p>
                <ul>
                <li><em>NAME</em> lists the names of the Deployments in the cluster.</li>
